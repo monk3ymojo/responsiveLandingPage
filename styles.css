@@ -14,72 +14,75 @@ body{
     font-size: 25px;
 }
 
-/* .textContainer{
+.container{
+    /* border: red solid 1px; */
     position: absolute;
     top: 250px;
     left: 100px;
-} */
+    height: 250px;
+    width: 616px;
+}
 
 .firstLine{
+    position: absolute;
+    top: 0;
     z-index: 1;
-    position: absolute;
-    top: 248px;
-    left: 50px;
-}
-
-.cover{
-    width: 100%;
-    height: 55px;
-    /* background-color: #757575e5; */
-    background-color: #1b1b1b;
-}
-
-.cover1{
-    position: absolute;
-    top: 251px;
-    z-index: 2;
-    animation-name: reveal;
-    animation-delay: 1s;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
 }
 
 .secondLine{
+    position: absolute;
+    top: 93px;
     z-index: 3;
-    position: absolute;
-    top: 320px;
-    left: 50px;
-}
-
-.cover2{
-    z-index: 4;
-    position: absolute;
-    top: 324px;
-    animation-name: reveal;
-    animation-duration: 7s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
 .thirdLine{
-    z-index: 5;
     position: absolute;
-    top: 390px;
-    left: 50px;
+    bottom: 0;
+    z-index: 5;
 }
 
-.cover3{
-    z-index: 6;
+.coverContainer{
+    /* border: red solid 1px; */
     position: absolute;
-    top: 393px;
+    top: 0px;
+    left: 0px;
+    height: 250px;
+    width: 616px;
     animation-name: reveal;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
+.cover{
+    position: relative;
+    background-color: #1b1b1b;
+    height: 55px;
+}
+
+.cover1{
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cover2{
+    top: 44px;
+    left: 0;
+    z-index: 4;
+}
+
+
+.cover3{
+    top: 80px;
+    left: 0;
+    z-index: 6;
+}
+
+
+
 @keyframes reveal {
-    100% {top: 450px;}
+    100% {top: 55px;}
 }
 
 .otherText{
